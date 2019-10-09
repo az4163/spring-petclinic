@@ -77,6 +77,11 @@ public class ClinicServiceTests {
     protected VetRepository vets;
 
     @Test
+    public void testToBeFailed() {
+        assertThat(2).isBetween(5, 10);
+    }
+
+    @Test
     public void shouldFindOwnersByLastName() {
         Collection<Owner> owners = this.owners.findByLastName("Davis");
         assertThat(owners).hasSize(2);
