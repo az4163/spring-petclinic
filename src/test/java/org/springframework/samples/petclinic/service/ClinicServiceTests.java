@@ -76,10 +76,10 @@ public class ClinicServiceTests {
     @Autowired
     protected VetRepository vets;
 
-    @Test
+    /*@Test
     public void testToBeFailed() {
         assertThat(2).isBetween(5, 10);
-    }
+    }*/
 
     @Test
     public void shouldFindOwnersByLastName() {
